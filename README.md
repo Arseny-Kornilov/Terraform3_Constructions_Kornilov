@@ -34,3 +34,11 @@
 <img width="956" height="288" alt="image" src="https://github.com/user-attachments/assets/aea6151b-65c9-423d-adce-028202ff8381" />
 
   
+## Задание 4
+- В файле ansible.tf создайте inventory-файл для ansible. Используйте функцию tepmplatefile и файл-шаблон для создания ansible inventory-файла из лекции. Готовый код возьмите из демонстрации к лекции demonstration 2.
+- Передайте в него в качестве переменных группы виртуальных машин из задания 2.1, 2.2 и 3.2, т. е. 5 ВМ.
+Инвентарь должен содержать 3 группы и быть динамическим, т. е. обработать как группу из 2-х ВМ, так и 999 ВМ.
+- Добавьте в инвентарь переменную fqdn.
+- Выполните код.
+- Приложите скриншот получившегося файла.
+<img width="652" height="277" alt="image" src="https://github.com/user-attachments/assets/b20fda99-d8ef-4ae6-b80b-7fa66f1d76da" />
