@@ -9,19 +9,19 @@ resource "yandex_compute_disk" "disks" {
 
 resource "yandex_compute_instance" "storage" {
   name = "storage"
-  platform_id = "standard-v3"
+  platform_id = var.platform_id 
   zone = var.default_zone
 
   boot_disk {
     initialize_params {
-      image_id = "fd84nt41ssoaapgql97p"
+      image_id = data.yandex_compute_image.os.id
       size     = 8
     }
   }
 
   resources {
-    cores  = 2
-    memory = 4
+    cores  = var.common_resources.cores
+    memory = var.common_resources.memory
   }
 
   network_interface {
